@@ -3,3 +3,6 @@ kubectl config get-contexts
 
 # switch conext 
 kubectl config use-context <cluster-name>
+
+# get nodes
+kubectl get nodes
