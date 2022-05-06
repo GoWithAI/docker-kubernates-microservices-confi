@@ -1,1 +1,5 @@
+# get config of clusters in kubernates
+kubectl config get-contexts
 
+# switch conext 
+kubectl config use-context <cluster-name>
