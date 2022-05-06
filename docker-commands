@@ -1,1 +1,2 @@
-
+# Run docker compose -f = file , -d = detach mode
+docker compose -f <compose-yaml file> up -d
