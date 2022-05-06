@@ -3,3 +3,7 @@ docker compose -f <compose-yaml file> up -d
 
 # list of all running container
 docker ps
+
+# if Ports are not available: listen tcp 0.0.0.0/50070: bind: An attempt was made to access a socket in a way forbidden by its access permissions
+net stop winnat
+net start winnat
