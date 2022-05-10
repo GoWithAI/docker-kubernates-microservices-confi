@@ -27,3 +27,6 @@ df -h
 
 # remove any stopped containers and all unused images 
 docker system prune -a
+
+# Check docker status
+sudo service docker status
