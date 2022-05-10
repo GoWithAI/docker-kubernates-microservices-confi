@@ -1,3 +1,6 @@
+#General Commands
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
 # get config of clusters in kubernates
 kubectl config get-contexts
 
