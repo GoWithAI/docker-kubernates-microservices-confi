@@ -9,6 +9,8 @@ kubectl config use-context <cluster-name>
 
 # Kubernates create deployment file
 kubectl create deployment mysql --image=mysql:5.7 --dry-run=client -o=yaml > mysql-deployment.yml
+
+#Create POD
 kubectl apply -f mysql-deployment.yml
 
 # Kubernates create Service
