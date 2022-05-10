@@ -4,8 +4,29 @@ kubectl config get-contexts
 # switch conext 
 kubectl config use-context <cluster-name>
 
+# Kubernates create deployment file
+kubectl create deployment mysql --image=mysql:5.7 --dry-run=client -o=yaml > mysql-deployment.yml
+kubectl apply -f mysql-deployment.yml
+
+# Kubernates create Service
+kubectl create service clusterip mysql --tcp=3306 --dry-run=client -o=yaml > mysql-service.yml
+kubectl apply -f mysql-service.yml
+
 # get nodes
 kubectl get nodes
+
+kubectl create deployment jms --image=vromero/activemq-artemis --dry-run=client -o=yaml > jms-deploymnet.yml
+kubectl apply -f jms-deployment.yml
+
+kubectl create service clusterip jms --tcp=8161:8161 --61616:61616 --dry-run=client -o=yaml > jms-service.yml
+kubectl apply -f jms-service.yml
+
+
+#get details about pod
+kubectl describe pod
+
+# get all pods,services
+kubectl get all
 
 # Basic Commands
 minikube status
@@ -31,3 +52,4 @@ kubectl get deployment <deployment_name> -o yaml > <fileName.yaml>
 kubectl get all
 kubectl create namespace <namespace_object>
 kubectl get namespace
+
