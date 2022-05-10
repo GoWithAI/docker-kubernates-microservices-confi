@@ -10,3 +10,6 @@ docker ps
 # if Ports are not available: listen tcp 0.0.0.0/50070: bind: An attempt was made to access a socket in a way forbidden by its access permissions
 net stop winnat
 net start winnat
+
+# Kubernates create deployment file
+kubectl create deployment mysql --image=mysql:5.7 --dry-run=client -o=yaml > mysql-deployment.yml
