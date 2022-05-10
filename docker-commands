@@ -21,3 +21,9 @@ kubectl apply -f mysql-service.yml
 
 # List of pods
 kubectl get all
+
+# space of docker container
+df -h
+
+# remove any stopped containers and all unused images 
+docker system prune -a
