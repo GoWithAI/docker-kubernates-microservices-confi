@@ -15,6 +15,9 @@ kubectl apply -f mysql-deployment.yml
 kubectl create service clusterip mysql --tcp=3306 --dry-run=client -o=yaml > mysql-service.yml
 kubectl apply -f mysql-service.yml
 
+# Delete POD,Services
+kubectl delete -f beer-service-deployment.yml
+
 # get nodes
 kubectl get nodes
 
