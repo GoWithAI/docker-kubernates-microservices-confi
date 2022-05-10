@@ -6,3 +6,28 @@ kubectl config use-context <cluster-name>
 
 # get nodes
 kubectl get nodes
+
+# Basic Commands
+minikube status
+kubectl cluster-info
+kubectl version
+kubectl get nodes
+kubectl get services
+kubectl create deployment <deployment_name> --image=<image_name> [--dry-run] [options]
+kubectl get deployment
+kubectl get pod
+kubectl get replicaset
+kubectl edit deployment <deployment_name>
+kubectl logs <pod_name>
+kubectl describe pod <pod_name>
+kubectl exec -it <pod_name> --bin/bash
+kubectl delete deployment <deployment_name>
+kubectl create -f <configfile_name.yaml>
+kubectl apply -f <configfile_name.yaml>
+kubectl delete -f <configfile_name.yaml>
+kubectl describe service <service_name>
+kubectl get pod -o wide
+kubectl get deployment <deployment_name> -o yaml > <fileName.yaml>
+kubectl get all
+kubectl create namespace <namespace_object>
+kubectl get namespace
