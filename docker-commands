@@ -18,3 +18,6 @@ kubectl apply -f mysql-deployment.yml
 # Kubernates create Service
 kubectl create service clusterip mysql --tcp=3306 --dry-run=client -o=yaml > mysql-service.yml
 kubectl apply -f mysql-service.yml
+
+# List of pods
+kubectl get all
