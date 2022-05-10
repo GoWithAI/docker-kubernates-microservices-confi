@@ -13,3 +13,4 @@ net start winnat
 
 # Kubernates create deployment file
 kubectl create deployment mysql --image=mysql:5.7 --dry-run=client -o=yaml > mysql-deployment.yml
+kubectl apply -f mysql-deployment.yml
