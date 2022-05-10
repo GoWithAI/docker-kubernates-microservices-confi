@@ -11,16 +11,6 @@ docker ps
 net stop winnat
 net start winnat
 
-# Kubernates create deployment file
-kubectl create deployment mysql --image=mysql:5.7 --dry-run=client -o=yaml > mysql-deployment.yml
-kubectl apply -f mysql-deployment.yml
-
-# Kubernates create Service
-kubectl create service clusterip mysql --tcp=3306 --dry-run=client -o=yaml > mysql-service.yml
-kubectl apply -f mysql-service.yml
-
-# List of pods
-kubectl get all
 
 # space of docker container
 df -h
