@@ -61,3 +61,5 @@ kubectl get all
 kubectl create namespace <namespace_object>
 kubectl get namespace
 
+#IMP - find Target port and forwarded port to access NodePort IP:PORT outside cluster
+minikube service --all
