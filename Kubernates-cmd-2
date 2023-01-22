@@ -1,1 +1,24 @@
 
+kubectl run nginx --image=nginx:1.10.0
+
+In version k8s v1.18+ later, when you run kubectl run nginx --image=nginx it will create pod instead of deployment. 
+You have to create deployment by imperative command kubectl create deployment <deploy-name> 
+
+
+kubectl create deployment nginx --image=nginx
+kubectl get deployments - Running application
+kubectl get pods
+
+Service Label
+Selector Service -service selector finds the labels of a pod
+Node Port - Nodes port
+Port - Service Port
+Target Port - Target port is the port where services do forwarding the request to
+
+Service and Interact with Multiple Nodes,Pods
+
+Service Type - NodePort, ClusterIP, LoadBalancer 
+
+EXTERNAL-IP - Used to Connect outside world
+
+$ kubectl get svc
